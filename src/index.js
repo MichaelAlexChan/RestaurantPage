@@ -15,10 +15,14 @@ function sectionFill(section) {
   }
 }
 
-//sectionFill();
+sectionFill('home');
 
 const navigation = document.getElementById("nav");
 navigation.addEventListener('click', (event) => {
   const section = event.target.getAttribute('id');
   sectionFill(section);
+})
+
+window.addEventListener('load', () => {
+  document.getElementById('home').focus()
 })
